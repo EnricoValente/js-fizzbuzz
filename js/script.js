@@ -6,21 +6,21 @@
 
 
 
-let number = 1;
+for(let number = 1; number <= 100; number++){
+    
 
-for(number = 1; number <= 100; number++){
-    console.log('number', number);
-
-    if(number % 15 == 0){
-        console.log('number', 'FizzBuzz');
+    if(number % 3 == 0 && number % 5 == 0){
+      console.log('FizzBuzz');
     }
 
     else if (number % 3 == 0) {
-        console.log('number', 'Fizz');
+        console.log('Fizz');
     }
 
     else if (number % 5 == 0) {
-        console.log('number', 'Buzz');
+        console.log('Buzz');
+    }else {
+        console.log(number);
     }
 }
 
